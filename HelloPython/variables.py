@@ -102,7 +102,7 @@ else:
 
 original = 23
 inverted = 0
-while orinal != 10:
+while original != 10:
      inverted = inverted * 10 + (original % 10)
      original //= 10
 print(inverted)
@@ -195,7 +195,7 @@ else:
 
 original = 23
 inverted = 0
-while orinal != 10:
+while original != 10:
      inverted = inverted * 10 + (original % 10)
      original //= 10
 print(inverted)
@@ -204,7 +204,7 @@ print(inverted)
 
 original = 23
 inverted = 0
-while orinal != 10:
+while original != 10:
      inverted = inverted * 10 + (original % 10)
      original //= 10
 else:
