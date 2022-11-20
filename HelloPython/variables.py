@@ -187,7 +187,7 @@ if username == 'Маша':
 elif username == 'Марина':
       print('Я так ждала Вас, Марина!')
 elif username == 'Ильнар':
-      print(''Ильнар - то:)')
+      print('Ильнар - то:)')
 else:
       print('Привет, ', username)
 
@@ -226,13 +226,13 @@ for i in r:
 text = 'съешь ещё этих мягких французских булок'
 
 print(len(text))         # 39
-print('ещё' in text      # True
+print('ещё' in text)      # True
 print(text.isdigit())    # False
 print(text.isLower())    # True
-print(text.replace('ещё','ЕЩЁ')
+print(text.replace('ещё','ЕЩЁ'))
 
 for c in text:
-print(c)
+    print(c)
 
 # Списки: введение
 # list = list
