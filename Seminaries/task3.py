@@ -9,3 +9,12 @@ a = int(input())
 
 for i in range(-a, a + 1):
     print(i, end=" ")
+
+#=======2й вариант==========#
+
+print('Введите число: ')
+n = int(input())
+a = []
+for i in range(-n, n+1):
+    a.append(i)
+print(*a)
