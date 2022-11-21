@@ -40,9 +40,9 @@ print(list)
 # print() - отвечает за ввод данных
 # input() - отвечает за ввод данных
 
-print('Введите а');
+print('Введите а')
 a = int(input())
-print('Введите b');
+print('Введите b')
 b = int(input())
 print(a, ' + ' , b, ' = ', a + b)
 
@@ -70,7 +70,7 @@ print(f)
 
 f = [1,2,3,4]
 print(f)
-print(2 in f) # Ввыводит True 
+print(2 in f)     # Ввыводит True 
 print(not 2 in f) # Выводит False
 
 is_odd = not f[0] % 2 
@@ -90,21 +90,21 @@ else:
 
 username = input('Введите имя: ')
 if username == 'Маша':
-      print('Ура, это же МАША! ')
+    print('Ура, это же МАША! ')
 elif username == 'Марина':
-      print('Я так ждала Вас, Марина!')
+    print('Я так ждала Вас, Марина!')
 elif username == 'Ильнар':
-      print('Ильнар - то:)')
+    print('Ильнар - то:)')
 else:
-      print('Привет, ', username)
+    print('Привет, ', username)
 
 #========================
 
 original = 23
 inverted = 0
 while original != 10:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
+    inverted = inverted * 10 + (original % 10)
+    original //= 10
 print(inverted)
 
 #========================
@@ -112,11 +112,11 @@ print(inverted)
 original = 23
 inverted = 0
 while original != 10:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
+    inverted = inverted * 10 + (original % 10)
+    original //= 10
 else:
-     print('Пожалуй')
-     print('хватит )')
+    print('Пожалуй')
+    print('хватит )')
 print(inverted)
 
 #========================
@@ -183,21 +183,21 @@ else:
 
 username = input('Введите имя: ')
 if username == 'Маша':
-      print('Ура, это же МАША! ')
+    print('Ура, это же МАША! ')
 elif username == 'Марина':
-      print('Я так ждала Вас, Марина!')
+    print('Я так ждала Вас, Марина!')
 elif username == 'Ильнар':
-      print('Ильнар - то:)')
+    print('Ильнар - то:)')
 else:
-      print('Привет, ', username)
+    print('Привет, ', username)
 
 #========================
 
 original = 23
 inverted = 0
 while original != 10:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
+    inverted = inverted * 10 + (original % 10)
+    original //= 10
 print(inverted)
 
 #========================
@@ -205,11 +205,11 @@ print(inverted)
 original = 23
 inverted = 0
 while original != 10:
-     inverted = inverted * 10 + (original % 10)
-     original //= 10
+    inverted = inverted * 10 + (original % 10)
+    original //= 10
 else:
-     print('Пожалуй')
-     print('хватит )')
+    print('Пожалуй')
+    print('хватит )')
 print(inverted)
 
 #========================
