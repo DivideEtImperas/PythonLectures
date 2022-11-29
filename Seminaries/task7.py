@@ -9,7 +9,7 @@ n = int(input())
 dict = {}
 for i in range(1,n):
     res = 3*i + 1    
-    dic[i] = res
+    dict[i] = res
 print(dict)
 
 # list comprehension ##генератор списка
