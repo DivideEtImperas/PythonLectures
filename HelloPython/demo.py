@@ -70,19 +70,56 @@
 # l.sort()
 # print(l)
 
-hero = "Harry"
-guide = "Dumbledore"
-enemy = "Lord V."
-print(hash(hero))
-# 6175908009919104006
-print(hash(guide))
-# -5197671124693729851
-## Можно ли создать множество строковых значений?
-characters = {hero, guide, enemy}
-print(characters)
-# {'Lord V.', 'Dumbledore', 'Harry'}
-## Можно ли создать множество списков?
-team_1 = [hero, guide]
-team_2 = [enemy]
-teams = {team_1, team_2}
-# TypeError: unhashable type: 'list'
+# n = int(input('Ваше число сэр: '))
+# if n > 3:
+#     print("Big")
+# elif n == 3:
+#     print("Medium")
+# else:
+#     print("Small")
+
+
+# # Объявлениие цикла for
+# for i in [0,1,2]:
+#     print(i)
+
+# # Цикл while - аналогичная семантика
+# j = 0
+# while j < 3:
+#     print(j)
+#     j = j+1
+
+# while True:
+#     break # цикл не бесконечный
+
+# print("hello world")
+
+# def appreciate(x, percentage):
+#     return x + x * percentage / 100
+
+# print(appreciate(10000, 5))
+
+
+# print((lambda x: x + 3)(3))
+
+
+# n = float(input('Введите вещественное число:'))
+
+
+# person1_weight = 121.25
+# print(type(person1_weight))
+
+
+
+num = input("Введите вещественное число: ")
+
+string = int(num.partition('.')[2]) # преобразуем в строку и удаляем цифры до запятой
+number = int(string) # полученые знаки после запятой преобразуем в целое число
+
+# цикл для подсчета суммы цифр в числе
+sum = 0
+while (number != 0):
+    sum = sum + number % 10
+    number = number // 10
+
+print("Сумма цифр после точки равна:", sum)
