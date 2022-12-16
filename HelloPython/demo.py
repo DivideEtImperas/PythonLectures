@@ -110,16 +110,104 @@
 # print(type(person1_weight))
 
 
+# import random
+ 
+ 
+# PlayerOne = "Анна"
+# PlayerTwo = "Алекс"
+ 
+# AnnaScore = 0
+# AlexScore = 0
+ 
+# # У каждого кубика шесть возможных значений
+# diceOne = [1, 2, 3, 4, 5, 6]
+# diceTwo = [1, 2, 3, 4, 5, 6]
+ 
+# def playDiceGame():
+#     """Оба участника, Анна и Алекс, бросают кубик, используя метод shuffle"""
+ 
+#     for i in range(5):
+#         #оба кубика встряхиваются 5 раз
+#         random.shuffle(diceOne)
+#         random.shuffle(diceTwo)
+#     firstNumber = random.choice(diceOne) # использование метода choice для выбора случайного значения
+#     SecondNumber = random.choice(diceTwo)
+#     return firstNumber + SecondNumber
+ 
+# print("Игра в кости использует модуль random\n")
+ 
+# #Давайте сыграем в кости три раза
+# for i in range(3):
+#     # определим, кто будет бросать кости первым
+#     AlexTossNumber = random.randint(1, 100) # генерация случайного числа от 1 до 100, включая 100
+#     AnnaTossNumber = random.randrange(1, 101, 1) # генерация случайного числа от 1 до 100, не включая 101
+ 
+#     if( AlexTossNumber > AnnaTossNumber):
+#         print("Алекс выиграл жеребьевку.")
+#         AlexScore = playDiceGame()
+#         AnnaScore = playDiceGame()
+#     else:
+#         print("Анна выиграла жеребьевку.")
+#         AnnaScore = playDiceGame()
+#         AlexScore = playDiceGame()
+ 
+#     if(AlexScore > AnnaScore):
+#         print ("Алекс выиграл игру в кости. Финальный счет Алекса:", AlexScore, "Финальный счет Анны:", AnnaScore, "\n")
+#     else:
+#         print("Анна выиграла игру в кости. Финальный счет Анны:", AnnaScore, "Финальный счет Алекса:", AlexScore, "\n")
 
-num = input("Введите вещественное число: ")
+# # Игра КОНФЕТЫ
+# # вариант человек против бота:
+# from random import randint
 
-string = int(num.partition('.')[2]) # преобразуем в строку и удаляем цифры до запятой
-number = int(string) # полученые знаки после запятой преобразуем в целое число
+# def input_dat(name):
+#     x = int(input(f"{name}, введите количество конфет, которое возьмете от 1 до 28: "))
+#     while x < 1 or x > 28:
+#         x = int(input(f"{name}, введите корректное количество конфет: "))
+#     return x
 
-# цикл для подсчета суммы цифр в числе
-sum = 0
-while (number != 0):
-    sum = sum + number % 10
-    number = number // 10
 
-print("Сумма цифр после точки равна:", sum)
+# def p_print(name, k, counter, value):
+#     print(f"Ходил {name}, он взял {k}, теперь у него {counter}. Осталось на столе {value} конфет.")
+
+# player1 = input("Введите имя первого игрока: ")
+# player2 = "Bot"
+# value = int(input("Введите количество конфет на столе: "))
+# flag = randint(0,2) # флаг очередности
+# if flag:
+#     print(f"Первый ходит {player1}")
+# else:
+#     print(f"Первый ходит {player2}")
+
+# counter1 = 0 
+# counter2 = 0
+
+# while value > 28:
+#     if flag:
+#         k = input_dat(player1)
+#         counter1 += k
+#         value -= k
+#         flag = False
+#         p_print(player1, k, counter1, value)
+#     else:
+#         k = randint(1,29)
+#         counter2 += k
+#         value -= k
+#         flag = True
+#         p_print(player2, k, counter2, value)
+
+# if flag:
+#     print(f"Выиграл {player1}")
+# else:
+#     print(f"Выиграл {player2}")
+
+
+# Рандомайзер символов
+from random import randint
+
+collection = [randint(100, 7000) for i in range(10)]
+
+def my_func(var: int):
+    print(chr(var), end=' ')
+
+set(map(my_func, collection))

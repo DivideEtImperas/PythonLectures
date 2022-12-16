@@ -1,28 +1,28 @@
 # Анонимные, lambda функции
-#------------------------------
+# ------------------------------
 
 # def f(x):
 #     return x**2
 
 # g = f
 
-# # print(type(f))
-# # print(type(g))
+# print(type(f))
+# print(type(g))
 
-# # print(f(4))
-# # print(g(4))
+# print(f(4))
+# print(g(4))
 
 
 # def calc1(x):
 #     return x+10
 
-# # print(calc1(10))
+# print(calc1(10))
 
 
 # def calc2(x):
 #     return x*10
 
-# # print(calc2(10))
+# print(calc2(10))
 
 
 # def math(op,x):
@@ -52,17 +52,17 @@
 # list = []
 
 # for i in range(1 ,101):
-#     # if(i%2 == 0):
+#     if(i%2 == 0):
 #         list.append(i);
 # print(list)
 
-# def f(x):
-#     return x**2 
+def f(x):
+    return x**2 
 
-# # list = [(i,f(i)) for i in range(1,21) if i%2 ==0]
-# # print(list)
+list = [(i,f(i)) for i in range(1,21) if i%2 ==0]
+print(list)
 
-# list1 = [1,2,3,5,8,15,23,38]
+list1 = [1,2,3,5,8,15,23,38]
 
 # list2 = [(i,f(i)) for i in list1 if i%2 == 0]
 
@@ -110,23 +110,23 @@
 # Функция zip()
 #---------------------------------
 
-users = ['user1', 'user2', 'user3', 'user4', 'user5']
-ids = [4, 5, 9, 14, 7]
-salary = [111,222,333]
+# users = ['user1', 'user2', 'user3', 'user4', 'user5']
+# ids = [4, 5, 9, 14, 7]
+# salary = [111,222,333]
 
-data = list(zip(users,ids,salary))
-print(data)
+# data = list(zip(users,ids,salary))
+# print(data)
     
-#--------------------------------
-# Функция enumerate()
-#--------------------------------
+# #--------------------------------
+# # Функция enumerate()
+# #--------------------------------
 
-users = ['user1', 'user2', 'user3', 'user4', 'user5']
-ids = [4, 5, 9, 14, 7]
-salary = [111,222,333]
+# users = ['user1', 'user2', 'user3', 'user4', 'user5']
+# ids = [4, 5, 9, 14, 7]
+# salary = [111,222,333]
 
-data = list(enumerate(users,ids,salary))
-print(data)
+# data = list(enumerate(users,ids,salary))
+# print(data)
 
 
 

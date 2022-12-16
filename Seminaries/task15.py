@@ -11,9 +11,6 @@ for i in range(len(list)):
     if (list[i])<=(list[i-1]+1):
         
         
-         
-      
-
          print(list[i])
 
 # res1 = (list[0:1])
