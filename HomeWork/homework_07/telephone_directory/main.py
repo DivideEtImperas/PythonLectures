@@ -1,3 +1,6 @@
-import controller as c
+from controller import *
 
-c.button_click()
+
+greeting()
+
+choice_todo()
