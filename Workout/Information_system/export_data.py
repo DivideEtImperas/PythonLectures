@@ -1,5 +1,6 @@
 def export_data():
-    with open('base.csv', 'r', encoding="utf-8") as file:
+    with open('E:\\Programming\\PythonLectures\\Seminaries\\Information_system\\base.csv', 'r',
+              encoding="utf-8") as file:
         data = []
         t = []
         for line in file:
@@ -19,4 +20,3 @@ def export_data():
                     data.append(t)
                     t = []
     return data
-  
