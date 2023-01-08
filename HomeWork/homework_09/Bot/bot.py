@@ -38,7 +38,7 @@ def handle_game_proc(message):
 @bot.message_handler(content_types=['text'])
 
 def send_welcome(message):
-    if(message.text == "Игра"):
+    if(message.chat.id,"Игра"):
         global turn, candys, enable_game
     
         candys[message.chat.id] = 117
@@ -53,7 +53,7 @@ def send_welcome(message):
                             f'Осталось {candys[message.chat.id]}')
             turn[message.chat.id] = 'User'
 
-
+            
 
 @bot.message_handler(func=handle_game_proc)
 def game_process(message):
